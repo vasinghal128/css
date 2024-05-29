@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+    text-decoration: red underline;
+    letter-spacing: normal;
+    font-family: arial;
+}
+h2{
+    text-align: right;
+    text-decoration: purple dotted line-through;
+    letter-spacing: 10px;
+    font-family: impact;    
+}
+h3{
+    font-weight: normal;   
+    text-decoration: wavy overline;
+    font-size: 28px; 
+    font-family: fantasy;
+}   
+a{
+    text-decoration: none;
+}
+p{
+    line-height: 2.5;
+    font-family: avant garde, didot, sans-serif;
+}
