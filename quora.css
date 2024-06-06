@@ -1,0 +1,78 @@
+*{ /* it selects whole html code(*)(universl selector)*/
+    font-family:'Courier New';
+    background-color:tan;
+}
+h1 , h3{ /* for multiple element select (element selector)*/
+    color: #b92b27 !important;
+}
+#signup{ /*it is used for select element by id and modify them (#) (id selectors)*/
+    background-color: #b92b27;
+    color: white;
+}
+#login{ 
+    background-color: white;
+}
+.upvote{  /* it is used for select element by class(.) (class selector)*/
+    background-color: rgb(0, 255 , 0);
+}
+.comment a{ /* it is use for select elemrnt in element (descendant selecotr)*/
+    color: purple;
+    background-color: yellow;
+}
+nav ul li{ /* it is for three level in descendant selecotr*/
+    color:red;
+}
+nav ul li a{ /* it is use for four level descendant selecotr*/ 
+    color:darkgreen
+}
+p+h3{
+    text-decoration: underline;
+}
+.upvote + button{
+    background-color:chocolate;
+}
+div > input{
+    background-color:lightsalmon;
+}
+input[type="text"]{
+    color:darkmagenta;
+}
+div[id="myid"] p{ /* this is practice question*/
+    color:green;
+}
+button:hover{
+    background-color: red;
+    color:gold;
+}
+h3:hover{
+    text-decoration: none;
+}
+button:active{
+    background-color:gold;
+    color:red;
+}
+p:hover{
+    font-weight:bold;
+}
+input[type="radio"]:checked + label{
+    font-weight: bold;
+    color: red;
+}
+div:nth-of-type(2n){
+    background-color: #b92b27;  
+}
+h1::first-letter{
+    color:black;
+}
+div[id ="myid"] p::first-line{
+    color:red;
+}
+p::selection{
+    background-color: #b92b27;
+}
+h3{
+    background-color: orangered;
+}
+h3{ /* this bsckground color will apply because of cascading*/
+    background-color: lightseagreen;
+}
