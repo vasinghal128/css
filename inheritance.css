@@ -1,0 +1,21 @@
+div{
+    background-color: darkgreen;
+}
+form{
+    background-color: white;
+}
+input{
+    background-color: inherit;
+}
+button{
+    background-color: inherit;
+}
+button:hover{
+    background-color: blue  ;
+}
+input:active{
+    background-color: aqua;
+}
+input:hover{
+    background-color: aqua;
+}
