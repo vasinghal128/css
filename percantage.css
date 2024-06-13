@@ -1,0 +1,16 @@
+h1{
+    border: 2px solid black;
+    width: 33.33%; /*it relative to parent(body) 33.33% of parent(body)*/
+}
+#outer{
+    height: 400px;
+    width: 400px;
+    background-color: pink;
+    margin: 50px;
+}
+#inner{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    margin: 10%;
+}
