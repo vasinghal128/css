@@ -1,0 +1,21 @@
+#outer{
+    border: 2px solid black;
+    height: 200px;
+    width:70px;
+}
+.inner{
+    height:50px;
+    width:50px;
+    border: 2px solid black;
+    margin:10px;
+    border-radius: 50%;
+}
+#one{
+    background-color: rgb(255,0,0);
+}
+#two{
+    background-color: yellow;
+}
+#three{
+    background-color: #00ff00;
+}
