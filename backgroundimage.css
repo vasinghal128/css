@@ -1,0 +1,34 @@
+#one{
+        width:400px;
+        height:200px;
+        background-color: #7aa874;
+        margin: 10px auto;
+        background-image:url(ai.jpg);
+        background-size: cover;/*crop*/
+        text-align: center;
+        color: white;
+}
+#two{
+    width:400px;
+    height:200px;
+    background-color: #7aa874;
+    margin: 10px auto;
+    background-image:url(ai.jpg);
+    background-size: contain;/*according size fit*/
+}
+#try{
+    width:400px;
+    height:200px;
+    background-color: #7aa874;
+    margin: 10px auto;
+    background-image:url(ai1.jpg);
+    background-size: contain;/* if size small than repeat*/
+}
+#three{
+    width:400px;
+    height:200px;
+    background-color: #7aa874;
+    margin: 10px auto;
+    background-image:url(ai.jpg);
+    background-size: auto;/*strech*/
+}

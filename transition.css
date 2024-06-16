@@ -1,0 +1,24 @@
+button{
+    height: 200px;
+    width: 200px;
+    background-color: hotpink;
+    margin: 0 auto;
+    transition-duration: 2s;
+    transition-delay: 2s;
+    margin:10px;
+}
+button:hover{
+    background-color: aqua;
+    border-radius: 50px;
+}
+div{
+    height: 200px;
+    width: 200px;
+    background-color: hotpink;
+    margin: 0 auto;
+    transition: margin-top 2s cubic-bezier(.29, 1.01, 1, -0.68) 0.5s;
+}
+div:hover{
+    margin-top: 400px;
+    background-color: aqua;
+}

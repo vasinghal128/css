@@ -1,0 +1,33 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center;
+    border : 3px solid black;
+    margin: 20px;
+    display: inline-block;
+}
+#static{
+    background-color: yellow;
+    position: static;
+    top: 100px;/*no effect because static property*/
+    left: 100px;/*no effect because static property*/
+}
+#relative{
+    background-color: yellow;
+    position: relative;
+    top: 100px;/*top offset*/  /*change*/   /*After change relative create space where its block placed*/
+    left: 100px;/*left offset*/  /*change*/
+}
+#absolute{
+    background-color: yellow;
+    position: absolute;
+    top: 100px;  /*After change absolute dosen't create any space where its block placed*/
+    left: 100px; 
+}
+#fixed{
+    background-color: yellow;
+    position: fixed;/*when we scroll down page it is also scroll down*/   /*Basically it is used for nav bar*/
+    top: 100px;
+    left: 100px; 
+}
