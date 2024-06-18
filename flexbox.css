@@ -1,0 +1,44 @@
+#container {
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex; /* Element direction <<columm [verical( | )] to row[horizontal ( - )]  or   row[horizontal ( - )] to columm [verical( | )]>> and << If height or width is bigger then containe height or width than Element arrange in the container Accoridng direction height or width>>*/
+    flex-direction: row; /* This change my flex direction to row[horizontal ( - )*/
+    /*justify-content: center;   It arrange at center along the main axis(if extra space remain)*/
+    justify-content: space-between; /* It give space between content along main axis (if extra space remain)*/
+    /* justify-content: space-around;  It give space between content and gives half of space of middle to before start content and after end content along main axis (if extra space remain) */
+    /* justify-content: space-evenly;  It give space between content and gives equal space to before start content and after end content along main axis (if extra space remain) */
+     flex-wrap: wrap; /* we use wrap to fit our content according to content height or width along main axis it contain remaing content in new line */
+    /* flex-wrap:wrap-reverse   it is reverse of flex-wrap: wrap;*/
+    /* flex-wrap: nowrap; defalt set*/
+    align-items: flex-end; /* it is set from end along cross axis */ 
+    align-items: baseline;/* it arrange content at same base line */
+    align-content: space-evenly;
+}
+#orange{
+    align-self: flex-end;
+    flex-basis: 50px;/*it set size of content along main axis << if direction = row it set[increase(if extra space) or shrink(if space not avalible)] size of width >> <<if direction = columm it set[increase(if extra space) or shrink(if space not avalible)] size of height>>*/
+    flex-grow: 2;/* it fill blank space*/
+    max-width: 150px;
+
+}
+#blue{
+    flex-grow: 1;
+    max-width: 200px;/*it set width can't set more then 200px*/
+}
+#red{
+    flex: 2 2 100px;
+}
+h1 {
+    text-align: center;
+}
+
+#container div {
+    height: 100px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
