@@ -1,0 +1,40 @@
+.container{
+    width: 600px;
+    height:300px;
+    background-color: black;
+    display: grid;
+    /*display: inline-grid;*/  /*it is use for show element is inline*/
+    /* grid-template-rows: 80px 80px 80px ; it create rows
+    grid-template-columns: 200px 200px 200px ; */  /* it create columns */
+    grid-template-rows: repeat(3,1fr);/*this is use for create number of same size rows*/
+    grid-template-columns: repeat(3,1fr);/*this is use for create number of same size columns*/
+    /* row-gap: 20px; */ /* this is use to create gap between row */
+    /*column-gap: 30px */ /* this is use to create gap between column */
+    grid-gap:20px 30px; /* grid-gap:row-gap column-gap */
+    /*grid-gap:20px*/ /* this is use to create same valuu of row and column gap */
+    justify-items: center;/*it is use for whole container items horizontaly( - )*/
+    align-items: end;/*it is use for whole container items vertical( | )*/
+    /*place-items:center*/ /*it is use for set dimension both horizontal and vertical for whole container items*/
+}
+.item{
+    height: 50px;;
+    width: 100px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+}
+#one{
+    /*grid-column-start: 1;*//*it start from column line number 1*/
+    /*grid-column-end: 3;*/ /*it end from column line number 3*/
+    grid-column: 1/3;/*grid-column: starting column line/endingcolumn line;*/
+   /* grid-column: 1/span 2; */ /*it strat from first line and after first line it needed 2 columns(cells)*/
+   justify-self: end;/* it is use for only one item horizontaly( | ) */
+   align-self: center;/* it is use for only one item vertical( - ) */
+}
+#two{
+    /*grid-row-start: 1;*//*it start from row line number 1*/
+    /*grid-row-end: 3;*/ /*it end from row line number 3*/
+    grid-row: 1/3;/*grid-column: starting column line/endingcolumn line;*/
+    /*grid-row: 1/span 2;*/ /*it strat from first line and after first line it needed 2 columns(cells)*/
+    place-self: center; /*it is use for set dimension both horizontal and vertical for only one item*/
+}
