@@ -1,0 +1,69 @@
+.box1{/* to implement animation*/
+    height:100px;
+    width:300px;
+    background-color:pink;
+    animation-name:fontanimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+.box2{
+    height:100px;
+    width:300px;
+    background-color:pink;
+    animation-name:widthanimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+.box3{
+    height:100px;
+    width:300px;
+    background-color:pink;
+    animation: coloranimation 3s ease-in 0s infinite alternate-reverse; /*implement animation shorthand*/
+}
+.box4{
+    height:100px;
+    width:300px;
+    background-color: pink;
+    animation: mixanimation 3s ease-in 0s infinite normal;
+}
+@keyframes coloranimation{ /*use to create a animation*/
+    from{ background-color: aqua; }
+    to{ background-color: orangered; }
+}
+@keyframes widthanimation{
+    from{ width:300px; }
+    to{ width:800px; }
+}
+@keyframes fontanimation{
+    from{ font-size:20px; }
+    to{ font-size:40px; }
+}
+@keyframes mixanimation{
+    from{ /*from = 0% (initial)*/
+        font-size:20px;
+        background-color: aqua;
+        width:300px;
+        color: darkgreen;
+     }
+     50%{ /*in between from and to*/
+        background-color: black;
+        color: white;
+     }
+     80%{ /*in between from and to*/
+        background-color: yellow;
+        color: blue;;
+     }
+    to{ /* to = 100%*/ 
+        font-size:40px;
+        background-color: orangered;
+        width:800px;
+        color: yellow;
+        border-radius: 20px;
+    }
+}
