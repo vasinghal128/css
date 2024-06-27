@@ -1,0 +1,13 @@
+.container{
+    background-color: black;
+    color: white;
+}
+.btn-link{ /*we can change bootstrap style*/
+    background-color: lightgreen;
+}
+body{
+    background-color: lightsalmon;
+}
+.bg-warning{
+    background-color: orangered;
+}
