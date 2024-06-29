@@ -8,6 +8,6 @@
 body{
     background-color: lightsalmon;
 }
-.bg-warning{
-    background-color: orangered;
+.nav-link{
+    color: white;
 }
