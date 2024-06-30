@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Forms demo</h2>
+        <form class="mb-3"> 
+<!--mb-3 ud=se for margin and padding space If we create class mb-3 in form elemrnt then there is no space between form elements--> 
+
+            <div class="mb-3"> 
+<!--If we create a div for each form elemrnt and then we create class mb-3 in div then there is a little space between form elements-->
+                <label for="em" class ="form-label">Email</label>
+                <input type="email" id="em" class ="form-control" placeholder="Eg. abc@gmail.com">
+            </div>
+            <div class="mb-3">
+                <label for="pass" class ="form-label">Password</label>
+                <input type="password" id="pass" class ="form-control" placeholder="Enter Your Password">
+                <div id="passwordHelpBlock" class="form-text"><!--for text down to email box-->
+                    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                  </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-md-6"> 
+                    <!--If we create a div for each form elemrnt and then we create class mb-3 in div then there is a little space between form elements-->
+                                    <label for="em" class ="form-label">Email</label>
+                                    <input type="email" id="em" class ="form-control" placeholder="Eg. abc@gmail.com">
+                                </div>
+                                <div class="mb-3 col">
+                                    <label for="pass" class ="form-label">Password</label>
+                                    <input type="password" id="pass" class ="form-control" placeholder="Enter Your Password">
+                                    <div id="passwordHelpBlock" class="form-text"><!--for text down to email box-->
+                                        Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                                      </div>
+            </div>
+            <div class="mb-3"><!--Range-->
+                <label for="customRange1" class="form-label">Example range</label>
+                <input type="range" class="form-range" id="customRange1">
+            </div>
+            <div class="mb-3"><!--for input file elements-->
+                <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+              </div>
+            <div class="mb-3">     
+                <label for="address" class ="form-label">Address</label>
+                <input type="text" id="address" class ="form-control" placeholder="Eg. Mumbai , Delhi , Bangluru , Jaipur , Chennai , Kolkata">     
+            </div>
+            <div class="mb-3">     
+                <label for="add" class ="form-label">Address</label>
+                <input type="text" id="add" class ="form-control-lg" placeholder="Eg. Mumbai , Delhi , Bangluru , Jaipur , Chennai , Kolkata">     
+            </div>
+            <div class="mb-3">     
+                <label for="addr" class ="form-label">Address</label>
+                <input type="text" id="addr" class ="form-control-sm" placeholder="Eg. Mumbai , Delhi , Bangluru , Jaipur , Chennai , Kolkata">     
+            </div>
+            <div class="mb-3">     
+                <label for="addre" class ="form-label">Address</label>
+                <input type="text" id="addre" class ="form-control-md" placeholder="Eg. Mumbai , Delhi , Bangluru , Jaipur , Chennai , Kolkata">     
+            </div>
+            <div class="mb-3"><!--for select multiple options-->
+                <select class="form-select">
+                    <option selected>Choose your city</option>
+                    <option value="1">Mumbai</option>
+                    <option value="2">Banglor</option>
+                    <option value="3">Jaipur</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <select class="form-select-lg">
+                    <option selected>Choose your city</option>
+                    <option value="1">Mumbai</option>
+                    <option value="2">Banglor</option>
+                    <option value="3">Jaipur</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <select class="form-select-sm">
+                    <option selected>Choose your city</option>
+                    <option value="1">Mumbai</option>
+                    <option value="2">Banglor</option>
+                    <option value="3">Jaipur</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <select class="form-select-md">
+                    <option selected>Choose your city</option>
+                    <option value="1">Mumbai</option>
+                    <option value="2">Banglor</option>
+                    <option value="3">Jaipur</option>
+                </select>
+            </div>
+            <div class="mb-3"><!--Normal checkboc-->
+                <input type="checkbox" id="agree">
+                <label for="agree">Do you agree</label>
+            </div>
+            <div class="form-check mb-3"> <!--Bootstrap checkbox-->
+                <input type="checkbox" class="form-check-input" id="agreebs">
+                <label for="agreebs" class="form-check-label">Do you agree</label>
+            </div>
+            <div class="form-check mb-3"> <!--radio-->
+                <input type="radio" class="form-check-input" id="agreeradiobs">
+                <label for="agreeradiobs" class="form-check-label">Do you agree</label>
+            </div>
+            <div class="form-check form-switch mb-3"><!--for switches-->
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+              </div>
+            <div class="md-3"><!--for show history search-->
+                <label for="exampleDataList" class="form-label">Datalist example</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                <datalist id="datalistOptions">
+                <option value="San Francisco">
+                <option value="New York">
+                <option value="Seattle">
+                <option value="Los Angeles">
+                <option value="Chicago">
+                </datalist>
+                <div class="form-check form-check-inline md-3"><!--for checkbox in one line-->
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+                  </div>
+            </div>
+        </form>
+    </div>
+    <form class="row g-3"> <!--for half of page-->
+        <div class="col-auto">
+          <label for="staticEmail2" class="visually-hidden">Email</label>
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="abc@example.com">
+        </div>
+        <div class="col-auto">
+          <label for="inputPassword2" class="visually-hidden">Password</label>
+          <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+        </div>
+        <div class="form-check form-check-reverse"><!--For opposite side-->
+            <input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
+            <label class="form-check-label" for="reverseCheck1">
+              Reverse checkbox
+            </label>
+          </div>
+          <div class="form-check form-check-reverse">
+            <input class="form-check-input" type="checkbox" value="" id="reverseCheck2" disabled>
+            <label class="form-check-label" for="reverseCheck2">
+              Disabled reverse checkbox
+            </label>
+          </div>
+          
+          <div class="form-check form-switch form-check-reverse">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckReverse">
+            <label class="form-check-label" for="flexSwitchCheckReverse">Reverse switch checkbox input</label>
+          </div>
+          <div class="input-group mb-3"><!--Bootstrap input-->
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">@example.com</span>
+          </div>
+          
+          <div class="mb-3">
+            <label for="basic-url" class="form-label">Your vanity URL</label>
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+              <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+            </div>
+            <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+          </div>
+          
+          <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">.00</span>
+          </div>
+          
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+          </div>
+          
+          <div class="input-group">
+            <span class="input-group-text">With textarea</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+          <form class="form-floating">
+            <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com">
+            <label for="floatingInputInvalid">Invalid input</label>
+          </form>
+      </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
